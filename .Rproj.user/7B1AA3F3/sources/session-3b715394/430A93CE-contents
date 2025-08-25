@@ -1,0 +1,37 @@
+---
+title: "Graduation Project Highlights"
+format:
+  html:
+    theme: default
+---
+
+# Graduation Project Highlights
+
+Curious what graduation work looks like in this cluster?\
+Here are some examples from previous students. Each project shows a different way of combining spatial data, analysis, and design to respond to real urban challenges. Use these projects as inspiration when developing your own ideas.
+
+:::::: project-grid
+::: project-card
+### Clean Corridors
+
+*M. van der Waal, 2024*
+
+A data-driven design for multi-scale green infrastructure design.
+:::
+
+::: project-card
+### Landscape-Based Fire Resilience
+
+*J. Song, 2023*
+
+Identifying interaction between landscape dynamics and fire regimes in the Mediterranean region.
+:::
+
+::: project-card
+### Bridging Past and Future
+
+*L.A. van Lun, 2024*
+
+Utilising cultural heritage values to increase resilience in Amsterdam's polder water system.
+:::
+::::::

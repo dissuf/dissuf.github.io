@@ -1,0 +1,157 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;700&display=swap');
+
+/* ===== Body ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #1F1F1F;
+    border-bottom: 1px solid #333;
+}
+
+.navbar a, .navbar .nav-link {
+    color: #E0E0E0;
+    font-size: 0.9rem; /* slightly smaller navbar font */
+}
+
+.navbar a:hover, .navbar .nav-link:hover {
+    color: #00BFFF;
+}
+
+/* ===== Headers ===== */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00BFFF;
+  font-size: 1.5rem; /* smaller main title */
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #00BFFF;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem; /* smaller main title */
+}
+
+/* ===== Paragraphs ===== */
+p {
+  color: #CCCCCC;
+}
+
+/* ===== Links ===== */
+a {
+  color: #00BFFF;
+  text-decoration: none;
+}
+a:hover {
+  color: #1DE9B6;
+  text-decoration: underline;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: #0D0D0D;
+}
+.navbar a {
+  color: #E0E0E0;
+}
+.navbar a:hover {
+  color: #00BFFF;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: #00BFFF;
+  border: none;
+  color: #121212;
+  transition: 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #1DE9B6;
+  color: #121212;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 4rem 2rem;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: #1E1E1E;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, border 0.3s ease;
+  border: 2px solid rgba(0, 191, 255, 0.3); /* subtle neon border */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+  filter: drop-shadow(0 0 10px #00BFFF) drop-shadow(0 0 20px #1DE9B6);
+  border: 2px solid #00BFFF; /* stronger neon border on hover */
+}
+
+.card img {
+  border: 3px solid #00BFFF;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+
+.text-muted {
+  color: #AAAAAA !important;
+}
+
+ul li strong {
+  color: #00BFFF;
+}
+
+/* ===== Supervisory Team Section ===== */
+#supervisory-team-section {
+  background: #181818;
+  padding: 3rem 2rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #0D0D0D;
+  color: #E0E0E0;
+  padding: 2rem;
+  text-align: center;
+  border: none; /* remove footer frame */
+}
+
+/* ===== Utility: Center Content ===== */
+.text-center {
+  text-align: center !important;
+}
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

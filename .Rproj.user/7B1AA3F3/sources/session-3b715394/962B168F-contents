@@ -1,0 +1,146 @@
+---
+title: "About"
+---
+
+## Data-Informed Design for Sustainable Urban Futures
+
+This cluster explores how data-informed approaches can support the design of climate-resilient urban environments. As cities increasingly face pressures such as flooding, heat stress, and resource scarcity, urbanism should harness the growing availability of urban data, analytics, and digital tools to evolve toward integrated, evidence-based, and context-sensitive design practices. **The cluster investigates how spatial data, modeling, and analysis can support innovative strategies operating across scales – from neighbourhoods to regions - and respond to specific urban challenges**.
+
+The scope of the cluster includes pressing spatial and policy issues such as climate vulnerability mapping, adaptation planning across jurisdictions, and integrating diverse data types (e.g., environmental, infrastructural, social) into actionable frameworks. Methodologically, the cluster bridges the gap between advanced spatial analytics and projective design by embedding large and diverse spatial-temporal datasets and leveraging analytical workflows and machine learning methods (such as S-MCDA, simulations, predictive models, and clustering) into the design process. The focus is on quantitative and mixed-methods approaches, aligned with **Open Science principles** such as reproducibility and FAIR data. Students are encouraged to share and publish their data and workflows alongside their design outputs.
+
+Students will engage with both analytical tools and exploratory, strategic design. The process will begin with data exploration - using GIS, scenario modeling, and multicriteria analysis - and progress toward spatial design interventions. The emphasis is on design-research: data is used not as an end but as a foundation for vision-driven, grounded design proposals.
+
+Students will develop a robust skill set, including technical competencies, strategic thinking, and the ability to synthesize insights across disciplines. They will strengthen their ability to communicate data-supported ideas clearly and collaborate in interdisciplinary teams - skills essential for future professionals in design, planning, policy, or consultancy.
+
+By working across cases and scales, students will explore how climate adaptation strategies can be localized, compared, and transferred. By the end of the studio, they will be equipped to contribute to sustainable urban futures with creativity, confidence, and analytical rigour.
+
+------------------------------------------------------------------------
+
+## The Supervisory Team
+
+We are 8 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 supervisor-grid">
+
+<!-- 1 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/danielecannatella.jpg" class="rounded-circle mb-3 mx-auto d-block" alt="Daniele Cannatella" width="150" height="150">
+  <h5 class="card-title">Daniele Cannatella</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Urban Data Science</p>
+  <p><strong>Email:</strong> <a href="mailto:d.cannatella@tudelft.nl">d.cannatella@tudelft.nl</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> GIS, Data-informed design, MCDA</li>
+    <li><strong>Mentorship:</strong> First & Second</li>
+  </ul>
+</div>
+</div>
+
+<!-- 2 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/Portrait_Placeholder.png" class="rounded-circle mb-3 mx-auto d-block" alt="Claudiu Forgaci" width="150" height="150">
+  <h5 class="card-title">Claudiu Forgaci</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Urban Design</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Climate adaptation, Resilience, Urban metabolism</li>
+    <li><strong>Mentorship:</strong> First mentor only</li>
+  </ul>
+</div>
+</div>
+
+<!-- 3 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/Portrait_Placeholder.png" class="rounded-circle mb-3 mx-auto d-block" alt="Yehan Wu" width="150" height="150">
+  <h5 class="card-title">Yehan Wu</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Urban Design</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Regional design, Green-blue infrastructure</li>
+    <li><strong>Mentorship:</strong> Second mentor only</li>
+  </ul>
+</div>
+</div>
+
+<!-- 4 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/danielamaiullari.webp" class="rounded-circle mb-3 mx-auto d-block" alt="Daniela Maiullari" width="150" height="150">
+  <h5 class="card-title">Daniela Maiullari</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Environmental Technology & Design</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Spatial modelling, Data visualization</li>
+    <li><strong>Mentorship:</strong> First & Second</li>
+  </ul>
+</div>
+</div>
+
+<!-- 5 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/clementinecottineau.webp" class="rounded-circle mb-3 mx-auto d-block" alt="Clémentine Cottineau-Mugadza" width="150" height="150">
+  <h5 class="card-title">Clémentine Cottineau-Mugadza</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Urban Studies</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Landscape-based design, Peri-urban regions</li>
+    <li><strong>Mentorship:</strong> First mentor only</li>
+  </ul>
+</div>
+</div>
+
+<!-- 6 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/Portrait_Placeholder.png" class="rounded-circle mb-3 mx-auto d-block" alt="Anneloes Nillesen" width="150" height="150">
+  <h5 class="card-title">Anneloes Nillesen</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Urban Design</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Strategic planning, Participatory methods</li>
+    <li><strong>Mentorship:</strong> Second mentor only</li>
+  </ul>
+</div>
+</div>
+
+<!-- 7 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/marjoleinvanesch.webp" class="rounded-circle mb-3 mx-auto d-block" alt="Marjolein van Esch" width="150" height="150">
+  <h5 class="card-title">Marjolein van Esch</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Environmental Technology & Design</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Spatial form, Typologies, Urban heritage</li>
+    <li><strong>Mentorship:</strong> First mentor only</li>
+  </ul>
+</div>
+</div>
+
+<!-- 8 -->
+<div class="col">
+<div class="card h-100 p-3 text-center">
+  <img src="images/camiloleonsanchez.png" class="rounded-circle mb-3 mx-auto d-block" alt="Camilo León-Sánchez" width="150" height="150">
+  <h5 class="card-title">Camilo León-Sánchez</h5>
+  <p class="text-muted">Assistant Professor</p>
+  <p><strong>Section:</strong> Urban Data Science</p>
+  <p><strong>Email:</strong> <a href="mailto:placeholder@example.com">placeholder@example.com</a></p>
+  <ul class="list-unstyled">
+    <li><strong>Expertise:</strong> Geospatial data, Remote sensing</li>
+    <li><strong>Mentorship:</strong> First & Second</li>
+  </ul>
+</div>
+</div>
+
+</div>
+

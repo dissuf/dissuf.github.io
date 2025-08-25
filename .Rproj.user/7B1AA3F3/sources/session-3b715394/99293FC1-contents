@@ -1,0 +1,379 @@
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Kode+Mono:wght@400;600&family=Fira+Code:wght@400;500;600&display=swap');
+
+/* ===== Hero Banner ===== */
+.hero-banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #F47C6C;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+/* ===== Title Block / Page Header ===== */
+.page-header,
+.quarto-title-block,
+.quarto-title-banner {
+  background-color: #F47C6C !important;  /* your orange */
+  border: none !important;
+  color: #FFFFFF !important;             /* white text for contrast */
+  padding: 2rem;
+  text-align: center;
+}
+
+.page-header h1,
+.quarto-title-block h1,
+.quarto-title-banner h1 {
+  font-family: 'Kode Mono', monospace;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ===== Subtitle Styling ===== */
+.subtitle, h2.subtitle {
+  font-family: 'Kode Mono', monospace; /* same font as headings */
+  font-size: 1.25rem;  /* adjust size */
+  font-weight: 400;    /* lighter than main title */
+  color: #FFFFFF;      /* coral/orange accent */
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #FFFFFF; /* white navbar */
+    opacity: 80%;
+    border-bottom: 1px solid #E0E0E0;
+    border-radius: 50px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.navbar a, .navbar .nav-link {
+    color: #1A1A1A;
+    font-family: 'Kode Mono', monospace;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar .nav-link:hover {
+    color: #F47C6C; /* warm coral on hover */
+}
+
+/* ===== Navbar Active Link ===== */
+.navbar .nav-link.active,
+.navbar .nav-link.show {
+  color: #F47C6C !important; /* coral orange */
+  font-weight: 600;
+}
+
+.contact-btn {
+  background-color: #F47C6C;
+  color: #FFF;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+/* ===== Headers ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kode Mono', monospace;
+  color: #1A1A1A;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h2::after, h3::after, h4::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #F47C6C; /* coral accent line */
+  margin-top: 0.4rem;
+  border-radius: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.intro {
+  background-color: #F7F7F7;
+  padding: 1em 1.5em;
+  /* border: 4px solid #F47C6C; */
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 2em;
+}
+
+
+/* ===== Body ===== */
+body {
+  font-family: 'Fira Code', monospace; /* main text */
+  background-color: #F4F4F4; /* light gray */
+  color: #1D1C1C;            /* charcoal text */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ===== Paragraphs ===== */
+p {
+  color: #333333; /* darker gray */
+}
+
+.text-muted {
+  color: #777777 !important;
+}
+
+/* ===== Links ===== */
+a {
+  color: #F47C6C;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1A1A1A;
+  text-decoration: underline;
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: none;
+  border: 1.5px solid #F47C6C;
+  color: #FFFFFF;            /* white text */
+  border-radius: 50px;
+  width: 25%;
+  transition: 0.3s ease;
+  padding: 0em 0em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary:hover {
+  background-color: #E46355;
+  color: #FFFFFF;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 4rem 2rem;
+}
+
+/* ===== Sections (Gray Background) ===== */
+.section-gray {
+  background-color: #EAEAEA;  /* full-width gray */
+  color: #FFFFFF;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 4rem 0;           /* only vertical padding */
+  text-align: center;
+}
+
+/* inner container keeps alignment */
+.section-gray .content-wrapper {
+  max-width: 1200px;          /* same width as your main layout */
+  margin: 0 auto;             /* center it */
+  padding: 0 2rem;            /* side padding for readability */
+  text-align: left;           /* align text with normal flow */
+}
+
+
+
+hr {
+  border: none;
+  border-top: 1px dashed #E46355;
+  opacity: 0.6;
+  margin: 2rem 0;
+}
+
+/* ===== Cards ===== */
+.card {
+  background-color: #FFFFFF;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #E0E0E0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  border: 1px solid #F47C6C;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #F47C6C;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #1A1A1A;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+ul li strong {
+  color: #F47C6C;
+}
+
+/* ===== Supervisory Team Section ===== */
+#supervisory-team-section {
+  background: #F4F4F4;
+  padding: 3rem 2rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #E0E0E0;
+}
+
+/* ===== Utility Classes ===== */
+.text-center {
+  text-align: center !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* ===== Grid spacing ===== */
+.row-cols-2 > .col, .row-cols-md-4 > .col {
+  margin-bottom: 2rem;
+}
+
+/* ===== Contacts ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 1px solid #E0E0E0;
+}
+
+.contact-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.contact-card a {
+  color: #F47C6C;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  color: #1A1A1A;
+  text-decoration: underline;
+}
+
+/* ===== Projects ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #E0E0E0;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border: 1px solid #F47C6C;
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card em {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #777777;
+  font-style: italic;
+}
+
+.card-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.carousel .card {
+  background-color: #FFFFFF;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;         /* fixed card width */
+  margin: auto;
+  border: 1px solid #E0E0E0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  border: 1px solid #F47C6C;
+}
+
+.carousel .card img {
+  border-radius: 0.75rem 0.75rem 0 0;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
