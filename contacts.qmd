@@ -1,34 +1,25 @@
 ---
-title: "Contact"
+title: "Contact us"
+title-block: none
 format:
   html:
     theme: default
 ---
 
-# Get in Touch
+Have questions about our research or interested in collaboration? We'd love to hear from you.
 
-We’d be happy to hear from you.  
-You can reach us individually or via the shared SDGIS email.
+## Team Members
 
-:::::: {.contact-grid}
+**Daniele Cannatella** <i class="bi bi-envelope"></i> [d.cannatella\@tudelft.nl](mailto:d.cannatella@tudelft.nl)
 
-::: {.contact-card}
-### Daniele Cannatella  
-<i class="bi bi-envelope"></i> [d.cannatella@tudelft.nl](mailto:d.cannatella@tudelft.nl)  
-<i class="bi bi-building"></i> TU Delft  
-:::
+**Claudiu Forgaci** <i class="bi bi-envelope"></i> [c.forgaci\@tudelft.nl](mailto:c.forgaci@tudelft.nl)
 
-::: {.contact-card}
-### Claudiu Forgaci  
-<i class="bi bi-envelope"></i> [c.forgaci@tudelft.nl](mailto:c.forgaci@tudelft.nl)  
-<i class="bi bi-building"></i> TU Delft  
-:::
+## General Inquiries
 
-::: {.contact-card}
-### SDGIS Cluster  
-<i class="bi bi-envelope"></i> [sdgis@tudelft.nl](mailto:sdgis@tudelft.nl)  
-<i class="bi bi-building"></i> TU Delft Faculty of Architecture  
-:::
+For general questions about the Spatial Data and GIS Education, research opportunities, or collaboration proposals:
 
-::::::
+**SDGIS Edu**
 
+<i class="bi bi-envelope"></i> [sdgis\@tudelft.nl](mailto:sdgis@tudelft.nl)
+
+<i class="bi bi-geo-alt"></i> TU Delft Faculty of Architecture

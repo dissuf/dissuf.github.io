@@ -1,5 +1,6 @@
 ---
 title: "Themes and Topics"
+title-block: none
 format: html
 ---
 

@@ -1,11 +1,59 @@
-/* ===== Google Fonts ===== */
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Kode+Mono:wght@400;600&family=Fira+Code:wght@400;500;600&display=swap');
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-/* ===== Hero Banner ===== */
+
+/* ===========================
+   BASE STYLES
+=========================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #222831;  /* dark base background */
+  color: #FFFFFF;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #EEEEEE;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #00ADB5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1A1A1A;
+  text-decoration: underline;
+}
+
+.text-muted {
+  color: #FFFFFF !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* ===========================
+   HERO BANNER
+=========================== */
 .hero-banner {
   width: 100%;
   height: 100vh;
-  background-color: #F47C6C;
+  background-color: #00ADB5;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -21,13 +69,43 @@
   opacity: 0.5;
 }
 
-/* ===== Title Block / Page Header ===== */
+
+/* ===========================
+   PAGE HEADER & TITLES
+=========================== */
+
+/* HOME PAGE - Keep teal background for all title variants */
+.home .page-header,
+.home .quarto-title-block,
+.home .quarto-title-banner,
+.home header.quarto-title-banner,
+.home .title-block-banner {
+  background-color: #00ADB5 !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  padding: 2rem;
+  text-align: center;
+  display: block !important;
+}
+
+/* Make sure home page titles are visible */
+.home .quarto-title-block h1,
+.home .quarto-title-banner h1,
+.home header.quarto-title-banner h1,
+.home .title-block-banner h1 {
+  color: #FFFFFF !important;
+  display: block !important;
+}
+
+/* OTHER PAGES - Transparent background */
 .page-header,
 .quarto-title-block,
-.quarto-title-banner {
-  background-color: #F47C6C !important;  /* your orange */
+.quarto-title-banner,
+header.quarto-title-banner,
+.title-block-banner {
+  background-color: transparent !important;
   border: none !important;
-  color: #FFFFFF !important;             /* white text for contrast */
+  color: #FFFFFF !important;
   padding: 2rem;
   text-align: center;
 }
@@ -35,284 +113,245 @@
 .page-header h1,
 .quarto-title-block h1,
 .quarto-title-banner h1 {
-  font-family: 'Kode Mono', monospace;
+  font-family: 'Kanit', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
 }
 
-/* ===== Subtitle Styling ===== */
-.subtitle, h2.subtitle {
-  font-family: 'Kode Mono', monospace; /* same font as headings */
-  font-size: 1.25rem;  /* adjust size */
-  font-weight: 400;    /* lighter than main title */
-  color: #FFFFFF;      /* coral/orange accent */
+.subtitle,
+h2.subtitle {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #FFFFFF;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* ===== Navbar ===== */
+
+/* ===========================
+   HEADINGS
+=========================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
+  color: #EEEEEE;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3, h4 {
+  font-weight: 500;
+}
+
+h2::after, h3::after, h4::after {
+  content: none; /* removes the decorative line */
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
 .navbar {
-    background-color: #FFFFFF; /* white navbar */
-    opacity: 80%;
-    border-bottom: 1px solid #E0E0E0;
-    border-radius: 50px;
-    margin: 2rem auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  border-bottom: 1px solid #E0E0E0;
+  border-radius: 50px;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.navbar a, .navbar .nav-link {
-    color: #1A1A1A;
-    font-family: 'Kode Mono', monospace;
-    font-size: 0.9rem;
-    transition: color 0.3s;
+.navbar a,
+.navbar .nav-link {
+  color: #1A1A1A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.navbar a:hover, .navbar .nav-link:hover {
-    color: #F47C6C; /* warm coral on hover */
+.navbar a:hover,
+.navbar .nav-link:hover {
+  color: #00ADB5;
 }
 
-/* ===== Navbar Active Link ===== */
 .navbar .nav-link.active,
 .navbar .nav-link.show {
-  color: #F47C6C !important; /* coral orange */
+  color: #00ADB5 !important;
   font-weight: 600;
 }
 
 .contact-btn {
-  background-color: #F47C6C;
-  color: #FFF;
+  background-color: #00ADB5;
+  color: #FFFFFF;
   border: none;
   padding: 0.5rem 1.2rem;
   border-radius: 50px;
   cursor: pointer;
   margin-left: 0.5rem;
-}
-
-/* ===== Headers ===== */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Kode Mono', monospace;
-  color: #1A1A1A;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-h2::after, h3::after, h4::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #F47C6C; /* coral accent line */
-  margin-top: 0.4rem;
-  border-radius: 2px;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-.intro {
-  background-color: #F7F7F7;
-  padding: 1em 1.5em;
-  /* border: 4px solid #F47C6C; */
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  margin-bottom: 2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
 
 
-/* ===== Body ===== */
-body {
-  font-family: 'Fira Code', monospace; /* main text */
-  background-color: #F4F4F4; /* light gray */
-  color: #1D1C1C;            /* charcoal text */
-  line-height: 1.6;
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-/* ===== Paragraphs ===== */
-p {
-  color: #333333; /* darker gray */
-}
-
-.text-muted {
-  color: #777777 !important;
-}
-
-/* ===== Links ===== */
-a {
-  color: #F47C6C;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #1A1A1A;
-  text-decoration: underline;
-}
-
-/* ===== Buttons ===== */
+/* ===========================
+   BUTTONS (Refined, Card-like)
+=========================== */
 .btn-primary {
-  background-color: none;
-  border: 1.5px solid #F47C6C;
-  color: #FFFFFF;            /* white text */
-  border-radius: 50px;
-  width: 25%;
-  transition: 0.3s ease;
-  padding: 0em 0em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn-primary:hover {
-  background-color: #E46355;
+  background-color: transparent;
+  border: 1.5px solid #00ADB5;
   color: #FFFFFF;
+  border-radius: 12px;            /* same as cards */
+  padding: 0.6em 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow like cards */
 }
 
-/* ===== Sections ===== */
-section {
-  padding: 4rem 2rem;
-}
-
-/* ===== Sections (Gray Background) ===== */
-.section-gray {
-  background-color: #EAEAEA;  /* full-width gray */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #00ADB5;
   color: #FFFFFF;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 4rem 0;           /* only vertical padding */
-  text-align: center;
+  transform: translateY(-3px);  /* lift like cards */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
-/* inner container keeps alignment */
-.section-gray .content-wrapper {
-  max-width: 1200px;          /* same width as your main layout */
-  margin: 0 auto;             /* center it */
-  padding: 0 2rem;            /* side padding for readability */
-  text-align: left;           /* align text with normal flow */
+.btn-primary:active {
+  transform: translateY(0);      /* reset press */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Optional: a secondary button for contrast */
+.btn-secondary {
+  background-color: #EEEEEE;
+  border: 1.5px solid #E0E0E0;
+  color: #393E46;
+  border-radius: 12px;
+  padding: 0.6em 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #00ADB5;
+  color: #FFFFFF;
+  border-color: #00ADB5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 
-
-hr {
-  border: none;
-  border-top: 1px dashed #E46355;
-  opacity: 0.6;
-  margin: 2rem 0;
-}
-
-/* ===== Cards ===== */
-.card {
-  background-color: #FFFFFF;
-  border-radius: 0.75rem;
+/* ===========================
+   CARDS (Unified Style)
+=========================== */
+.card,
+.contact-card,
+.project-card,
+.carousel .card {
+  background-color: #222831;
+  border: 1px solid #393E46;
+  border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid #E0E0E0;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  overflow: hidden;
 }
 
-.card:hover {
+.card:hover,
+.contact-card:hover,
+.project-card:hover,
+.carousel .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-  border: 1px solid #F47C6C;
+  border: 1px solid #00ADB5;
 }
 
-.card img {
+.card img,
+.carousel .card img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0rem;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  margin-bottom: 1rem;
-  border: 3px solid #F47C6C;
+  border: 2px solid #00ADB5;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .card-title {
-  color: #1A1A1A;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
-ul li strong {
-  color: #F47C6C;
+.card-text,
+.card p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
-/* ===== Supervisory Team Section ===== */
-#supervisory-team-section {
-  background: #F4F4F4;
-  padding: 3rem 2rem;
-}
-
-/* ===== Footer ===== */
-footer {
-  background-color: #FFFFFF;
-  color: #1A1A1A;
-  padding: 2rem;
-  text-align: center;
-  border-top: 1px solid #E0E0E0;
-}
-
-/* ===== Utility Classes ===== */
-.text-center {
-  text-align: center !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* ===== Grid spacing ===== */
-.row-cols-2 > .col, .row-cols-md-4 > .col {
-  margin-bottom: 2rem;
-}
-
-/* ===== Contacts ===== */
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
+/* Contact cards override */
 .contact-card {
-  background-color: #FFFFFF;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
+  background-color: #393E46;
+  color: #393E46;
   border: 1px solid #E0E0E0;
 }
 
-.contact-card h3 {
-  margin-bottom: 0.75rem;
-}
-
 .contact-card a {
-  color: #F47C6C;
-  text-decoration: none;
+  color: #00ADB5;
   font-weight: 500;
 }
 
 .contact-card a:hover {
   color: #1A1A1A;
-  text-decoration: underline;
 }
 
-/* ===== Projects ===== */
+/* Project cards override */
+.project-card {
+  background-color: #393E46;
+  color: #393E46;
+  border: 1px solid #E0E0E0;
+}
+
+/* Carousel wrapper */
+.card-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+
+
+/* ===========================
+   GRIDS
+=========================== */
+.contact-grid,
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -320,60 +359,288 @@ footer {
   margin-top: 2rem;
 }
 
-.project-card {
-  background-color: #FFFFFF;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid #E0E0E0;
+/* Supervisor grid - 4 columns on desktop, responsive on smaller screens */
+.supervisor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;  /* Reduced gap for tighter fit */
+  margin-top: 2rem;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  border: 1px solid #F47C6C;
+/* Team carousel cards - compact horizontal layout */
+.team-carousel-card {
+  height: 80%;
+  max-width: 150px;
+  margin: 0 auto;
 }
 
-.project-card h3 {
-  margin-bottom: 0.5rem;
-}
-
-.project-card em {
-  display: block;
-  margin-bottom: 0.75rem;
-  color: #777777;
-  font-style: italic;
-}
-
-.card-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.carousel .card {
-  background-color: #FFFFFF;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 300px;         /* fixed card width */
-  margin: auto;
-  border: 1px solid #E0E0E0;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.carousel .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-  border: 1px solid #F47C6C;
-}
-
-.carousel .card img {
-  border-radius: 0.75rem 0.75rem 0 0;
+.team-carousel-card .card-img-top {
   width: 100%;
-  height: 180px;
+  height: 120px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
+.team-carousel-card .card-title {
+  font-family: 'Kanit', sans-serif !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.2rem !important;
+  line-height: 1.1 !important;
+}
+
+.team-carousel-card .card-text {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 0.6rem !important;
+  line-height: 1.1 !important;
+  margin-bottom: 0.1rem !important;
+  color: #EEEEEE !important;
+}
+
+.team-carousel-card .card-body {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+/* Force horizontal layout in carousel */
+#teamCarousel .row {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: center;
+}
+
+#teamCarousel .col-2 {
+  flex: 0 0 16.666667% !important;
+  max-width: 16.666667% !important;
+  padding: 0 0.25rem;
+}
+
+/* Add some spacing between carousel slides */
+#teamCarousel .carousel-item {
+  padding: 3rem 1rem;
+}
+
+/* Responsive breakpoints for supervisor grid */
+@media (max-width: 992px) {
+  .supervisor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-horizontal-grid {
+    justify-content: center;
+  }
+
+  .team-horizontal-grid .col-md-2 {
+    width: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .supervisor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-horizontal-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-horizontal-grid .col-md-2 {
+    width: 200px;
+  }
+}
+
+.row-cols-2 > .col,
+.row-cols-md-4 > .col {
+  margin-bottom: 2rem;
+}
+
+/* Ensure supervisor cards have consistent height */
+.supervisor-grid .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Make supervisor card text smaller and more compact */
+.supervisor-grid .card-title {
+  font-family: 'Kanit', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.3rem !important;
+  line-height: 1.1 !important;
+}
+
+.supervisor-grid .card p {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 0.8rem !important;
+  margin-bottom: 0.2rem !important;
+  line-height: 1.2 !important;
+}
+
+.supervisor-grid .card .text-muted {
+  font-size: 0.75rem !important;
+  line-height: 1.1 !important;
+}
+
+.supervisor-grid .card ul {
+  margin-bottom: 0.5rem !important;
+}
+
+.supervisor-grid .card ul li {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 0.75rem !important;
+  margin-bottom: 0.1rem !important;
+  line-height: 1.2 !important;
+}
+
+.supervisor-grid .card strong {
+  font-size: 0.75rem !important;
+  line-height: 1.1 !important;
+}
+
+
+/* ===========================
+   MISC
+=========================== */
+hr {
+  border: none;
+  border-top: 1px dashed #00ADB5;
+  opacity: 0.6;
+  margin: 2rem 0;
+}
+
+#supervisory-team-section {
+  background: #393E46;
+  padding: 3rem 2rem;
+}
+
+ul li strong {
+  color: #00ADB5;
+}
+
+/* Ensure list items use Open Sans */
+ul li, ol li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer,
+#quarto-footer,
+.quarto-footer,
+.nav-footer {
+  background-color: #393E46 !important;
+  color: #FFFFFF !important;
+  border-top: 1px solid #E0E0E0 !important;
+}
+
+/* Footer text should use Open Sans */
+footer p,
+.nav-footer p,
+.quarto-footer p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* The white "box" is this container */
+.nav-footer,
+.nav-footer .container,
+.nav-footer .container-fluid,
+footer .content,
+.quarto-footer .content {
+  background-color: #393E46 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Optional: ensure no stray margins/padding create a light band */
+.quarto-footer,
+.nav-footer {
+  margin: 0 !important;
+  padding-top: 1.25rem;  /* tweak as you like */
+  padding-bottom: 1.25rem;
+}
+
+/* Optional: match the "Back to top" button to your theme */
+.quarto-back-to-top {
+  background-color: #222831 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #00ADB5 !important;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Make title always blue */
+.navbar-brand,
+.navbar-title {
+  color: #00ADB5 !important; /* Bootstrap blue */
+}
+
+.navbar-brand:hover,
+.navbar-title:hover {
+  color: #00ADB5 !important; /* Darker blue on hover */
+}
+
+/* Make Contact nav item always blue */
+.navbar-nav .nav-link[href*="contact"],
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-item .nav-link:contains("Contact") {
+  color: #00ADB5 !important;
+}
+
+.navbar-nav .nav-link[href*="contact"]:hover {
+  color: #00ADB5 !important;
+}
+
+/* Custom Contact Button Styling */
+.navbar-nav .nav-link[href*="contact"] {
+  background-color: #00ADB5 !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  margin-left: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-nav .nav-link[href*="contact"]:hover {
+  background-color: #00ADB5 !important;
+  color: white !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3) !important;
+}
+
+/* Alternative approach if you can add a custom class */
+.contact-btn {
+  background-color: #00ADB5 !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  margin-left: 8px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  display: inline-block !important;
+}
+
+.contact-btn:hover {
+  background-color: #00ADB5 !important;
+  color: white !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3) !important;
+  text-decoration: none !important;
+}
+
+/* Option 2: More specific blue color */
+:root {
+  --brand-blue: #00ADB5; /* Tailwind blue-600 */
+  --brand-blue-hover: #00ADB5; /* Tailwind blue-700 */
+}
+
+/* Using custom properties */
+.navbar-nav .nav-link[href*="contact"].btn-style {
+  background-color: var(--brand-blue) !important;
+  color: white !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  margin-left: 8px !important;
+}

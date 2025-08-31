@@ -1,5 +1,6 @@
 ---
 title: "Graduation Project Highlights"
+title-block: false
 format:
   html:
     theme: default

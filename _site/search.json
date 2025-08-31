@@ -25,7 +25,7 @@
     "href": "index.html#our-team",
     "title": "DATA-INFORMED STRATEGIES FOR SUSTAINABLE URBAN FUTURES",
     "section": "Our Team",
-    "text": "Our Team\n\n\n\n \n\n\n\n\n\n\n\n\n\n\nProject One\n\n\nDescription of project one here.\n\n\n\n\n\n\n\n\n\nProject Two\n\n\nDescription of project two here.\n\n\n\n\n\n\n\n\n\nProject Three\n\n\nDescription of project three here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject Four\n\n\nDescription of project four here.\n\n\n\n\n\n\n\n\n\nProject Five\n\n\nDescription of project five here.\n\n\n\n\n\n\n\n\n\nProject Six\n\n\nDescription of project six here."
+    "text": "Our Team\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDaniele Cannatella\n\n\nData-Driven Design, Climate Adaptation\n\n\n\n\n\n\n\n\n\nClaudiu Forgaci\n\n\nClimate Adaptation\n\n\n\n\n\n\n\n\n\nYehan Wu\n\n\nSpatial Planning\n\n\n\n\n\n\n\n\n\n\nDaniela Maiullari\n\n\nGIS & Modeling\n\n\n\n\n\n\n\n\n\n\n\n\n\nClémentine Cottineau-Mugadza\n\n\nUrban Design\n\n\n\n\n\n\n\n\n\nAnneloes Nillesen\n\n\nSustainability\n\n\n\n\n\n\n\n\n\n\nMarjolein van Esch\n\n\nUrban Microclimate\n\n\n\n\n\n\n\n\n\nCamilo León-Sánchez\n\n\nUrban Studies"
   },
   {
     "objectID": "index.html#graduation-projects-highlights",
@@ -58,9 +58,9 @@
   {
     "objectID": "contacts.html",
     "href": "contacts.html",
-    "title": "Contact",
+    "title": "Contact us",
     "section": "",
-    "text": "Get in Touch\nWe’d be happy to hear from you.\nYou can reach us individually or via the shared SDGIS email.\n\n\nDaniele Cannatella\n d.cannatella@tudelft.nl\n TU Delft\n\n\nClaudiu Forgaci\n c.forgaci@tudelft.nl\n TU Delft\n\n\nSDGIS Cluster\n sdgis@tudelft.nl\n TU Delft Faculty of Architecture\n\n\n\n\n\n\n Back to top"
+    "text": "Have questions about our research or interested in collaboration? We’d love to hear from you."
   },
   {
     "objectID": "projects.html",
@@ -68,5 +68,54 @@
     "title": "Graduation Project Highlights",
     "section": "",
     "text": "Graduation Project Highlights\nCurious what graduation work looks like in this cluster?\nHere are some examples from previous students. Each project shows a different way of combining spatial data, analysis, and design to respond to real urban challenges. Use these projects as inspiration when developing your own ideas.\n\n\nClean Corridors\nM. van der Waal, 2024\nA data-driven design for multi-scale green infrastructure design.\n\n\nLandscape-Based Fire Resilience\nJ. Song, 2023\nIdentifying interaction between landscape dynamics and fire regimes in the Mediterranean region.\n\n\nBridging Past and Future\nL.A. van Lun, 2024\nUtilising cultural heritage values to increase resilience in Amsterdam’s polder water system.\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "We are 8 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Data Science\n\n\nEmail: d.cannatella@tudelft.nl\n\n\n\nExpertise: GIS, Data-informed design, MCDA\n\n\nMentorship: First & Second\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Climate adaptation, Resilience, Urban metabolism\n\n\nMentorship: First mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Regional design, Green-blue infrastructure\n\n\nMentorship: Second mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Environmental Technology & Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Spatial modelling, Data visualization\n\n\nMentorship: First & Second\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Studies\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Landscape-based design, Peri-urban regions\n\n\nMentorship: First mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Strategic planning, Participatory methods\n\n\nMentorship: Second mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Environmental Technology & Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Spatial form, Typologies, Urban heritage\n\n\nMentorship: First mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Data Science\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Geospatial data, Remote sensing\n\n\nMentorship: First & Second"
+  },
+  {
+    "objectID": "team.html#the-supervisory-team",
+    "href": "team.html#the-supervisory-team",
+    "title": "Team",
+    "section": "",
+    "text": "We are 8 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Data Science\n\n\nEmail: d.cannatella@tudelft.nl\n\n\n\nExpertise: GIS, Data-informed design, MCDA\n\n\nMentorship: First & Second\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Climate adaptation, Resilience, Urban metabolism\n\n\nMentorship: First mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Regional design, Green-blue infrastructure\n\n\nMentorship: Second mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Environmental Technology & Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Spatial modelling, Data visualization\n\n\nMentorship: First & Second\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Studies\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Landscape-based design, Peri-urban regions\n\n\nMentorship: First mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Strategic planning, Participatory methods\n\n\nMentorship: Second mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Environmental Technology & Design\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Spatial form, Typologies, Urban heritage\n\n\nMentorship: First mentor only\n\n\n\n\n\n\n\n\n\n\nAssistant Professor\n\n\nSection: Urban Data Science\n\n\nEmail: placeholder@example.com\n\n\n\nExpertise: Geospatial data, Remote sensing\n\n\nMentorship: First & Second"
+  },
+  {
+    "objectID": "index.html#themes",
+    "href": "index.html#themes",
+    "title": "DATA-INFORMED STRATEGIES FOR SUSTAINABLE URBAN FUTURES",
+    "section": "Themes",
+    "text": "Themes\n\nStrategic Spatial Frameworks – comprehensive plans guiding urban or regional development strategies.\nIntegrated Climate Adaptation Plans – proposals combining design, policy, and resilience measures for climate adaptation.\nScenario-Based Design Studies – exploring alternative future scenarios to inform design decisions.\nCross-Case Comparative Analyses – comparative studies across multiple urban contexts or projects to derive transferable insights.\nData-Driven Design Prototypes – design proposals emphasizing performance metrics, simulation, and visual analytics to support decision-making."
+  },
+  {
+    "objectID": "index.html#contact-us",
+    "href": "index.html#contact-us",
+    "title": "DATA-INFORMED STRATEGIES FOR SUSTAINABLE URBAN FUTURES",
+    "section": "Contact us",
+    "text": "Contact us\nDaniele Cannatella  d.cannatella@tudelft.nl\nClaudiu Forgaci  c.forgaci@tudelft.nl\nFor general questions about the Spatial Data and GIS Education, research opportunities, or collaboration proposals:\nSDGIS Edu\n sdgis@tudelft.nl\n TU Delft Faculty of Architecture"
+  },
+  {
+    "objectID": "contacts.html#team-members",
+    "href": "contacts.html#team-members",
+    "title": "Contact us",
+    "section": "Team Members",
+    "text": "Team Members\nDaniele Cannatella  d.cannatella@tudelft.nl\nClaudiu Forgaci  c.forgaci@tudelft.nl"
+  },
+  {
+    "objectID": "contacts.html#general-inquiries",
+    "href": "contacts.html#general-inquiries",
+    "title": "Contact us",
+    "section": "General Inquiries",
+    "text": "General Inquiries\nFor general questions about the Spatial Data and GIS Education, research opportunities, or collaboration proposals:\nSDGIS Edu\n sdgis@tudelft.nl\n TU Delft Faculty of Architecture"
+  },
+  {
+    "objectID": "index.html#general-inquiries",
+    "href": "index.html#general-inquiries",
+    "title": "DATA-INFORMED STRATEGIES FOR SUSTAINABLE URBAN FUTURES",
+    "section": "General Inquiries",
+    "text": "General Inquiries\nFor general questions about the Spatial Data and GIS Education, research opportunities, or collaboration proposals:\nSDGIS Edu\n sdgis@tudelft.nl\n TU Delft Faculty of Architecture"
   }
 ]

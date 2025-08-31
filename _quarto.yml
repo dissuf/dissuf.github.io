@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs   # publish to docs folder for GitHub Pages
 
 website:
   title: "Data-Informed Design for Sustainable Urban Futures"
@@ -9,7 +10,9 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About/Team
+        text: "About the cluster"
+      - href: team.qmd
+        text: Team
       - href: projects.qmd
         text: Projects
       - href: themes.qmd
