@@ -29,7 +29,11 @@ By the end of the graduation, you won’t just have designs, you’ll have teste
 <!-- Indicators -->
 
 ::: carousel-indicators
-<button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+
+</button>
+
+<button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
 :::
 
 ::::::::::::::::::::::::::::::: carousel-inner
@@ -237,13 +241,13 @@ Urban Studies
 
 ## Contact us
 
-**Daniele Cannatella** <i class="bi bi-envelope" style="color:teal;"></i> [d.cannatella@tudelft.nl](mailto:d.cannatella@tudelft.nl)
+**Daniele Cannatella** <i class="bi bi-envelope" style="color:teal;"></i> [d.cannatella\@tudelft.nl](mailto:d.cannatella@tudelft.nl)
 
-**Claudiu Forgaci** <i class="bi bi-envelope" style="color:teal;"></i> [c.forgaci@tudelft.nl](mailto:c.forgaci@tudelft.nl)
+**Claudiu Forgaci** <i class="bi bi-envelope" style="color:teal;"></i> [c.forgaci\@tudelft.nl](mailto:c.forgaci@tudelft.nl)
 
 For general questions about the Spatial Data and GIS Education, research opportunities, or collaboration proposals:
 
 **SDGIS Edu**
 
-<i class="bi bi-envelope" style="color:teal;"></i> [sdgis@tudelft.nl](mailto:sdgis@tudelft.nl)  
+<i class="bi bi-envelope" style="color:teal;"></i> [sdgis\@tudelft.nl](mailto:sdgis@tudelft.nl)\
 <i class="bi bi-geo-alt" style="color:teal;"></i> TU Delft Faculty of Architecture

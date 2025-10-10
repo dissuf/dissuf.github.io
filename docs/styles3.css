@@ -359,10 +359,10 @@ h2::after, h3::after, h4::after {
   margin-top: 2rem;
 }
 
-/* Supervisor grid - 4 columns on desktop, responsive on smaller screens */
+/* Supervisor grid - 2 columns on desktop, responsive on smaller screens */
 .supervisor-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;  /* Reduced gap for tighter fit */
   margin-top: 2rem;
 }
