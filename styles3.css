@@ -359,10 +359,10 @@ h2::after, h3::after, h4::after {
   margin-top: 2rem;
 }
 
-/* Supervisor grid - 2 columns on desktop, responsive on smaller screens */
+/* Supervisor grid - 4 columns on desktop, responsive on smaller screens */
 .supervisor-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;  /* Reduced gap for tighter fit */
   margin-top: 2rem;
 }
@@ -492,6 +492,7 @@ h2::after, h3::after, h4::after {
   font-size: 0.75rem !important;
   margin-bottom: 0.1rem !important;
   line-height: 1.2 !important;
+  color: #EEEEEE !important;
 }
 
 .supervisor-grid .card strong {
@@ -643,4 +644,11 @@ footer .content,
   padding: 8px 16px !important;
   border-radius: 6px !important;
   margin-left: 8px !important;
+}
+
+/* Override Bootstrap layout to use a strict CSS Grid */
+.supervisor-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)) !important;
+  gap: 1.5rem !important;
 }

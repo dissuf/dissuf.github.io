@@ -5,211 +5,253 @@ title-block: none
 
 ## The Supervisory Team
 
-We are 12 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.
+We are 7 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.
 
-:::::::::::::::::::: {.row .row-cols-1 .row-cols-md-2 .g-4 .supervisor-grid}
-
+::::::::::::::::: {.row .row-cols-1 .row-cols-md-2 .g-4 .supervisor-grid}
 <!-- 1 -->
-:::: {.col}
+
+:::: col
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/danielecannatella.jpg" alt="Daniele Cannatella" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
 ### Daniele Cannatella
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Data Science</p>
-<p><strong>Email:</strong> <a href="mailto:d.cannatella@tudelft.nl">d.cannatella@tudelft.nl</a></p>
 
-<ul>
-<li><strong>Expertise:</strong> Data-driven urban planning, climate adaptation, spatial analysis, cartography, green-blue infrastructure, GIS, R programming</li>
-<li><strong>Mentorship:</strong> 1st mentor: 3 students; 2nd mentor: 2 students</li>
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
+<p><strong>Section:</strong> Urban Data Science</p>
+
+<p><strong>Email:</strong> <a href="mailto:d.cannatella@tudelft.nl">d.cannatella\@tudelft.nl</a></p>
+
+<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+
+<li><strong>Expertise:</strong> GIS, Data-informed design, MCDA</li>
+
+<li><strong>Mentorship:</strong> First mentor: 3 students & Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
 <!-- 2 -->
-:::: {.col}
+
+:::: col
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/Portrait_Placeholder.png" alt="Claudiu Forgaci" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
 ### Claudiu Forgaci
-<p class="text-muted mb-1">Assistant Professor</p>
+
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
 <p><strong>Section:</strong> Urban Design</p>
-<p><strong>Email:</strong> <a href="mailto:c.forgaci@tudelft.nl">c.forgaci@tudelft.nl</a></p>
+
+<p><strong>Email:</strong> <a href="mailto:C.Forgaci@tudelft.nl">C.Forgaci\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Data-informed design, urban data science, spatial analysis, urban resilience, green-blue infrastructure, R programming</li>
-<li><strong>Mentorship:</strong> 1st mentor: 3 students; 2nd mentor: 2 students</li>
+
+<li><strong>Expertise:</strong> Climate adaptation, Resilience, Urban metabolism</li>
+
+<li><strong>Mentorship:</strong> First mentor: 3 students & Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
 <!-- 3 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/clementinecottineau.webp" alt="Clémentine Cottineau-Mugadza" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
-### Clémentine Cottineau-Mugadza
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Studies</p>
-<p><strong>Email:</strong> <a href="mailto:c.cottineau@tudelft.nl">c.cottineau@tudelft.nl</a></p>
+:::: col
+::: {.card .h-100 .p-3 .text-center}
+<img src="images/danielamaiullari.webp" alt="Daniela Maiullari" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+
+### Daniela Maiullari
+
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
+<p><strong>Section:</strong> Environmental Technology & Design</p>
+
+<p><strong>Email:</strong> <a href="mailto:D.Maiullari@tudelft.nl">D.Maiullari\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Quantitative geography, socioeconomic inequalities, spatial segregation, residential choice and mobility, interactive data visualization</li>
-<li><strong>Mentorship:</strong> 1st mentor: 1 student; 2nd mentor: 1 student</li>
+
+<li><strong>Expertise:</strong> Spatial modelling, Data visualization</li>
+
+<li><strong>Mentorship:</strong> Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
 <!-- 4 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Yizhao Du" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
-### Yizhao Du
-<p class="text-muted mb-1">Assistant Professor</p>
+:::: col
+::: {.card .h-100 .p-3 .text-center}
+<img src="images/clementinecottineau.webp" alt="Clémentine Cottineau-Mugadza" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+
+### Clémentine Cottineau-Mugadza
+
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
 <p><strong>Section:</strong> Urban Studies</p>
-<p><strong>Email:</strong> <a href="mailto:y.du@tudelft.nl">y.du@tudelft.nl</a></p>
+
+<p><strong>Email:</strong> <a href="mailto:C.Cottineau@tudelft.nl">C.Cottineau\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Polycentric urban systems, inter-city relations, governance for sustainable urban visions, smaller cities, spatial quality and liveability</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
+
+<li><strong>Expertise:</strong> Landscape-based design, Peri-urban regions</li>
+
+<li><strong>Mentorship:</strong> First mentor: 1 student & Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
 <!-- 5 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Juliana Gonçalves" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
-### Juliana Gonçalves
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Design</p>
-<p><strong>Email:</strong> <a href="mailto:j.goncalves@tudelft.nl">j.goncalves@tudelft.nl</a></p>
+:::: col
+::: {.card .h-100 .p-3 .text-center}
+<img src="images/marjoleinvanesch.jpeg" alt="Marjolein van Esch" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+
+### Marjolein van Esch
+
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
+<p><strong>Section:</strong> Environmental Technology & Design</p>
+
+<p><strong>Email:</strong> <a href="mailto:m.m.e.vanesch@tudelft.nl">m.m.e.vanesch\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Citizen participation, digital participation, climate adaptation</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
+
+<li><strong>Expertise:</strong> Urban climate, urban heat, heat stress, climate adaptation</li>
+
+<li><strong>Mentorship:</strong> Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
 <!-- 6 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Birgit Hausleitner" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
-### Birgit Hausleitner
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Design</p>
-<p><strong>Email:</strong> <a href="mailto:b.hausleitner@tudelft.nl">b.hausleitner@tudelft.nl</a></p>
+:::: col
+::: {.card .h-100 .p-3 .text-center}
+<img src="images/julianagoncalves.jpg" alt="Juliana Goncalves" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+
+### Juliana Goncalves
+
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
+<p><strong>Section:</strong> Spatial Planning & Strategy</p>
+
+<p><strong>Email:</strong> <a href="mailto:J.E.Goncalves@tudelft.nl">J.E.Goncalves\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Space syntax, pattern language, typology construction, metropolitan transformation, urban economy</li>
-<li><strong>Mentorship:</strong> 1st mentor: 1 student; 2nd mentor: 2 students</li>
+
+<li><strong>Expertise:</strong> Climate action, transformative adaptation, participation, collective action, spatial justice</li>
+
+<li><strong>Mentorship:</strong> Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
 <!-- 7 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/camiloleonsanchez.png" alt="Camilo León-Sánchez" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
-### Camilo León-Sánchez
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Data Science</p>
-<p><strong>Email:</strong> <a href="mailto:c.leonsanchez@tudelft.nl">c.leonsanchez@tudelft.nl</a></p>
+:::: col
+::: {.card .h-100 .p-3 .text-center}
+<img src="images/Portrait_Placeholder.png" alt="Ana Petrović" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+
+### Ana Petrović
+
+<p class="text-muted mb-1">
+
+Assistant Professor
+
+</p>
+
+<p><strong>Section:</strong> Urban Studies</p>
+
+<p><strong>Email:</strong> <a href="mailto:A.Petrovic@tudelft.nl">A.Petrovic\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Energy modeling, GIS, spatial analysis, geomatics</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 2 students</li>
+
+<li><strong>Expertise:</strong></li>
+
+<li><strong>Mentorship:</strong> Second mentor: 1 student</li>
+
 </ul>
 :::
 ::::
 
-<!-- 8 -->
-:::: {.col}
+```{=html}
+<!--
+:::: col
 ::: {.card .h-100 .p-3 .text-center}
-<img src="images/danielamaiullari.webp" alt="Daniela Maiullari" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+<img src="images/Portrait_Placeholder.png" alt="Birgit Hausleitner" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
-### Daniela Maiullari
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Environmental Technology & Design</p>
-<p><strong>Email:</strong> <a href="mailto:d.maiullari@tudelft.nl">d.maiullari@tudelft.nl</a></p>
+### Birgit Hausleitner
+
+<p class="text-muted mb-1">
+Lecturer
+</p>
+
+<p><strong>Section:</strong> Urban Design</p>
+
+<p><strong>Email:</strong> <a href="mailto:B.Hausleitner@tudelft.nl">B.Hausleitner\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Environmental modeling, microclimate analysis</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
+<li><strong>Expertise:</strong></li>
+<li><strong>Mentorship:</strong> Second mentor only</li>
 </ul>
 :::
 ::::
+-->
+```
 
-<!-- 9 -->
-:::: {.col}
+```{=html}
+<!--
+:::: col
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/Portrait_Placeholder.png" alt="Achilleas Psyllidis" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
 ### Achilleas Psyllidis
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Data Science</p>
-<p><strong>Email:</strong> <a href="mailto:a.psyllidis@tudelft.nl">a.psyllidis@tudelft.nl</a></p>
+
+<p class="text-muted mb-1">
+Associate Professor
+</p>
+
+<p><strong>Section:</strong> Sustainable Design Engineering (IO)</p>
+
+<p><strong>Email:</strong> <a href="mailto:A.Psyllidis@tudelft.nl">A.Psyllidis\@tudelft.nl</a></p>
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Sustainable urban mobility, accessibility, walkability, travel behavior, transport equity, mobility justice, 15-minute city, spatial analysis, urban analytics</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
+<li><strong>Expertise:</strong> Urban mobility</li>
+<li><strong>Mentorship:</strong> Second mentor only</li>
 </ul>
 :::
+::::  -->
+```
+:::::::::::::::::
+
 ::::
-
-<!-- 10 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Ignacio Urria Yáñez" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Ignacio Urria Yáñez
-<p class="text-muted mb-1">PhD Researcher</p>
-<p><strong>Section:</strong> Urban Data Science</p>
-<p><strong>Email:</strong> <a href="mailto:I.A.UrriaYanez@tudelft.nl">I.A.UrriaYanez@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Socio-Spatial Inequality, Multi-Scale Urban Analysis, Geographic Data Science, Urban Change, Neighbourhood Effects</li>
-</ul>
-:::
-::::
-
-<!-- 11 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/marjoleinvanesch.webp" alt="Marjolein van Esch" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Marjolein van Esch
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Environmental Technology & Design</p>
-<p><strong>Email:</strong> <a href="mailto:m.vanesch@tudelft.nl">m.vanesch@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Environmental modeling, microclimate analysis, climate adaptation</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
-</ul>
-:::
-::::
-
-<!-- 12 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Yehan Wu" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Yehan Wu
-<p class="text-muted mb-1">Postdoctoral Researcher</p>
-<p><strong>Section:</strong> Urban Design</p>
-<p><strong>Email:</strong> <a href="mailto:Y.Wu-13@tudelft.nl">Y.Wu-13@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Typology construction, GIS, microclimate modeling, climate adaptation</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
-</ul>
-:::
-::::
-
-::::::::::::::::::::

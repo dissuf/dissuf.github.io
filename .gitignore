@@ -1,2 +1,6 @@
 /.quarto/
 .Rproj.user
+.positai
+/_site/
+
+**/*.quarto_ipynb
