@@ -33,7 +33,9 @@ By the end of the graduation, you won’t just have designs, you’ll have teste
 
 </button>
 
-<button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+
+</button>
 :::
 
 ::::::::::::::::::::::::::::::: carousel-inner
@@ -75,26 +77,6 @@ Claudiu Forgaci
 <p class="card-text">
 
 Climate Adaptation
-
-</p>
-:::
-::::
-:::::
-
-::::: col-3
-:::: {.card .team-carousel-card}
-<img src="images/Portrait_Placeholder.png" alt="Yehan Wu" class="card-img-top"/>
-
-::: {.card-body .text-center}
-<h6 class="card-title">
-
-Yehan Wu
-
-</h6>
-
-<p class="card-text">
-
-Spatial Planning
 
 </p>
 :::
@@ -188,26 +170,6 @@ Urban Microclimate
 :::
 ::::
 :::::
-
-::::: col-3
-:::: {.card .team-carousel-card}
-<img src="images/camiloleonsanchez.png" alt="Camilo León-Sánchez" class="card-img-top"/>
-
-::: {.card-body .text-center}
-<h6 class="card-title">
-
-Camilo León-Sánchez
-
-</h6>
-
-<p class="card-text">
-
-Urban Studies
-
-</p>
-:::
-::::
-:::::
 :::::::::::::::
 ::::::::::::::::
 :::::::::::::::::::::::::::::::
@@ -229,15 +191,15 @@ Urban Studies
 
 ## Themes
 
--   **Strategic Spatial Frameworks** – comprehensive plans guiding urban or regional development strategies.
+- **Strategic Spatial Frameworks** – comprehensive plans guiding urban or regional development strategies.
 
--   **Integrated Climate Adaptation Plans** – proposals combining design, policy, and resilience measures for climate adaptation.
+- **Integrated Climate Adaptation Plans** – proposals combining design, policy, and resilience measures for climate adaptation.
 
--   **Scenario-Based Design Studies** – exploring alternative future scenarios to inform design decisions.
+- **Scenario-Based Design Studies** – exploring alternative future scenarios to inform design decisions.
 
--   **Cross-Case Comparative Analyses** – comparative studies across multiple urban contexts or projects to derive transferable insights.
+- **Cross-Case Comparative Analyses** – comparative studies across multiple urban contexts or projects to derive transferable insights.
 
--   **Data-Driven Design Prototypes** – design proposals emphasizing performance metrics, simulation, and visual analytics to support decision-making.
+- **Data-Driven Design Prototypes** – design proposals emphasizing performance metrics, simulation, and visual analytics to support decision-making.
 
 ## Contact us
 

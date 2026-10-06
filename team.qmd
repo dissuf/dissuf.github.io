@@ -5,7 +5,7 @@ title-block: none
 
 ## The Supervisory Team
 
-We are 12 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.
+We are 8 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.
 
 :::::::::::::::::::: {.row .row-cols-1 .row-cols-md-2 .g-4 .supervisor-grid}
 
@@ -63,23 +63,6 @@ We are 12 supervisors from across the Department of Urbanism, bringing together 
 <!-- 4 -->
 :::: {.col}
 ::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Yizhao Du" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Yizhao Du
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Studies</p>
-<p><strong>Email:</strong> <a href="mailto:y.du@tudelft.nl">y.du@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Polycentric urban systems, inter-city relations, governance for sustainable urban visions, smaller cities, spatial quality and liveability</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
-</ul>
-:::
-::::
-
-<!-- 5 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
 <img src="images/Portrait_Placeholder.png" alt="Juliana Gonçalves" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
 
 ### Juliana Gonçalves
@@ -94,7 +77,7 @@ We are 12 supervisors from across the Department of Urbanism, bringing together 
 :::
 ::::
 
-<!-- 6 -->
+<!-- 5 -->
 :::: {.col}
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/Portrait_Placeholder.png" alt="Birgit Hausleitner" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
@@ -111,24 +94,7 @@ We are 12 supervisors from across the Department of Urbanism, bringing together 
 :::
 ::::
 
-<!-- 7 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/camiloleonsanchez.png" alt="Camilo León-Sánchez" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Camilo León-Sánchez
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Data Science</p>
-<p><strong>Email:</strong> <a href="mailto:c.leonsanchez@tudelft.nl">c.leonsanchez@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Energy modeling, GIS, spatial analysis, geomatics</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 2 students</li>
-</ul>
-:::
-::::
-
-<!-- 8 -->
+<!-- 6 -->
 :::: {.col}
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/danielamaiullari.webp" alt="Daniela Maiullari" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
@@ -145,24 +111,7 @@ We are 12 supervisors from across the Department of Urbanism, bringing together 
 :::
 ::::
 
-<!-- 9 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Achilleas Psyllidis" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Achilleas Psyllidis
-<p class="text-muted mb-1">Assistant Professor</p>
-<p><strong>Section:</strong> Urban Data Science</p>
-<p><strong>Email:</strong> <a href="mailto:a.psyllidis@tudelft.nl">a.psyllidis@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Sustainable urban mobility, accessibility, walkability, travel behavior, transport equity, mobility justice, 15-minute city, spatial analysis, urban analytics</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
-</ul>
-:::
-::::
-
-<!-- 10 -->
+<!-- 7 -->
 :::: {.col}
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/Portrait_Placeholder.png" alt="Ignacio Urria Yáñez" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
@@ -178,7 +127,7 @@ We are 12 supervisors from across the Department of Urbanism, bringing together 
 :::
 ::::
 
-<!-- 11 -->
+<!-- 8 -->
 :::: {.col}
 ::: {.card .h-100 .p-3 .text-center}
 <img src="images/marjoleinvanesch.webp" alt="Marjolein van Esch" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
@@ -190,23 +139,6 @@ We are 12 supervisors from across the Department of Urbanism, bringing together 
 
 <ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
 <li><strong>Expertise:</strong> Environmental modeling, microclimate analysis, climate adaptation</li>
-<li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
-</ul>
-:::
-::::
-
-<!-- 12 -->
-:::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Yehan Wu" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
-
-### Yehan Wu
-<p class="text-muted mb-1">Postdoctoral Researcher</p>
-<p><strong>Section:</strong> Urban Design</p>
-<p><strong>Email:</strong> <a href="mailto:Y.Wu-13@tudelft.nl">Y.Wu-13@tudelft.nl</a></p>
-
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
-<li><strong>Expertise:</strong> Typology construction, GIS, microclimate modeling, climate adaptation</li>
 <li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
 </ul>
 :::

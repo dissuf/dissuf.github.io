@@ -3,9 +3,9 @@ project:
   output-dir: docs   # publish to docs folder for GitHub Pages
 
 website:
-  title: "Data-Informed Design for Sustainable Urban Futures"
+  title: "DISSUF"
   navbar:
-    logo: images/logo.png    # optional if you have a logo
+    # logo: images/logo.png    # disabled for now; re-enable once a logo exists
     right:
       - href: index.qmd
         text: Home
@@ -33,11 +33,12 @@ website:
 format:
   html:
     css: styles3.css
-    includes:
-      in_header: bootstrap.cdn.html
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700&display=swap">
     toc: false
-
-output-dir: _site
 
 editor: visual
 

@@ -1,2 +1,8 @@
 /.quarto/
-.Rproj.user
+.Rproj.user/
+.RData
+.Rhistory
+.Ruserdata
+_site/
+**/*.quarto_ipynb
+.DS_Store

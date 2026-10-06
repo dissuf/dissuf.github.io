@@ -11,7 +11,41 @@ format:
 Curious what graduation work looks like in this cluster?\
 Here are some examples from previous students. Each project shows a different way of combining spatial data, analysis, and design to respond to real urban challenges. Use these projects as inspiration when developing your own ideas.
 
-:::::: project-grid
+:::::::::: project-grid
+::: project-card
+### [Walking together](https://repository.tudelft.nl/record/uuid:701c598d-6d70-4490-9425-cf9a08dc2e5a){target="_blank" rel="noopener noreferrer"}
+
+*V. Ebermannová, 2026*
+
+Strengthening social cohesion across scales with walkability measures designed from perspectives of residents, commuters, and tourists in the broader city centre of Prague, Czechia
+:::
+
+::: project-card
+### [Towards a Resilient Port-Cityscape](https://repository.tudelft.nl/record/uuid:3d6d3156-7855-41d9-97b6-da268a00c5cd){target="_blank" rel="noopener noreferrer"}
+
+*Y. Hao, 2026*
+
+Identifying Waterfront Transformation Potential in Industrial Inland Port Cities in Transition in the Hinterland of Port of Rotterdam
+:::
+
+::: project-card
+### [Centralities in Metamorphosis](https://repository.tudelft.nl/record/uuid:b35ebb0b-724d-449f-b0f9-3fc3ba41f7f1){target="_blank" rel="noopener noreferrer"}
+
+*R. J. McGrattan, 2026*
+
+Emerging Urban Peripheral Centralities, Liveability, and Planning in Metropolitan Dublin
+:::
+
+::: project-card
+### [Urban Digital Memory](https://repository.tudelft.nl/record/uuid:b53fa71f-14ef-49a9-87a8-4a73372ff841){target="_blank" rel="noopener noreferrer"}
+
+*S. Saffarzadeh, 2026*
+
+Leveraging Social Media Data on Public Spaces to Inform Urban Design Processes
+:::
+
+:
+
 ::: project-card
 ### Clean Corridors
 
@@ -35,4 +69,4 @@ Identifying interaction between landscape dynamics and fire regimes in the Medit
 
 Utilising cultural heritage values to increase resilience in Amsterdam's polder water system.
 :::
-::::::
+::::::::::

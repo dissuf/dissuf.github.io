@@ -1,111 +1,86 @@
 /* ===========================
-   GOOGLE FONTS
+   DESIGN TOKENS
+   Fonts (Kanit, Open Sans) are loaded in _quarto.yml via <link>,
+   which is faster than @import here.
 =========================== */
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+:root {
+  --teal: #00ADB5;
+  --dark: #222831;
+  --dark-2: #393E46;
+  --light: #EEEEEE;
+  --white: #FFFFFF;
+  --ink: #1A1A1A;
+  --line: #E0E0E0;
+
+  --font-head: 'Kanit', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
 
 
 /* ===========================
    BASE STYLES
 =========================== */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #222831;  /* dark base background */
-  color: #FFFFFF;
-  line-height: 1.6;
+html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--dark);
+  color: var(--white);
+  line-height: 1.6;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 p {
-  color: #EEEEEE;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--light);
 }
 
 a {
-  color: #00ADB5;
+  color: var(--teal);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #1A1A1A;
+  color: var(--white);
   text-decoration: underline;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
 .text-muted {
-  color: #FFFFFF !important;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-
-/* ===========================
-   HERO BANNER
-=========================== */
-.hero-banner {
-  width: 100%;
-  height: 100vh;
-  background-color: #00ADB5;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.5;
+  color: var(--white) !important;
 }
 
 
 /* ===========================
    PAGE HEADER & TITLES
 =========================== */
-
-/* HOME PAGE - Keep teal background for all title variants */
-.home .page-header,
-.home .quarto-title-block,
-.home .quarto-title-banner,
-.home header.quarto-title-banner,
-.home .title-block-banner {
-  background-color: #00ADB5 !important;
-  border: none !important;
-  color: #FFFFFF !important;
-  padding: 2rem;
-  text-align: center;
-  display: block !important;
-}
-
-/* Make sure home page titles are visible */
-.home .quarto-title-block h1,
-.home .quarto-title-banner h1,
-.home header.quarto-title-banner h1,
-.home .title-block-banner h1 {
-  color: #FFFFFF !important;
-  display: block !important;
-}
-
-/* OTHER PAGES - Transparent background */
 .page-header,
 .quarto-title-block,
 .quarto-title-banner,
-header.quarto-title-banner,
 .title-block-banner {
   background-color: transparent !important;
   border: none !important;
-  color: #FFFFFF !important;
+  color: var(--white) !important;
   padding: 2rem;
   text-align: center;
 }
@@ -113,18 +88,17 @@ header.quarto-title-banner,
 .page-header h1,
 .quarto-title-block h1,
 .quarto-title-banner h1 {
-  font-family: 'Kanit', sans-serif;
-  font-size: 2rem;
+  font-family: var(--font-head);
+  font-size: clamp(1.5rem, 1rem + 2.5vw, 2rem);
   font-weight: 600;
   margin: 0;
 }
 
-.subtitle,
-h2.subtitle {
-  font-family: 'Kanit', sans-serif;
-  font-size: 1.25rem;
+.subtitle {
+  font-family: var(--font-head);
+  font-size: clamp(1rem, 0.85rem + 0.8vw, 1.25rem);
   font-weight: 400;
-  color: #FFFFFF;
+  color: var(--white);
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -134,22 +108,19 @@ h2.subtitle {
    HEADINGS
 =========================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Kanit', sans-serif;
-  color: #EEEEEE;
+  font-family: var(--font-head);
+  color: var(--light);
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  overflow-wrap: break-word;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1rem + 2.5vw, 2rem);
   font-weight: 600;
 }
 
-h2 {
-  font-weight: 500;
-}
-
-h3, h4 {
+h2, h3, h4 {
   font-weight: 500;
 }
 
@@ -162,20 +133,24 @@ h2::after, h3::after, h4::after {
    NAVBAR
 =========================== */
 .navbar {
-  background-color: #FFFFFF;
-  opacity: 0.9;
-  border-bottom: 1px solid #E0E0E0;
+  background-color: rgba(255, 255, 255, 0.9); /* translucent bg, solid text */
+  border-bottom: 1px solid var(--line);
   border-radius: 50px;
   margin: 2rem auto;
   width: 90%;
   max-width: 1200px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pull the menu, and the Contact pill at its end, closer to the navbar's right edge */
+.navbar .navbar-container {
+  padding-right: 0.5rem;
 }
 
 .navbar a,
 .navbar .nav-link {
-  color: #1A1A1A;
-  font-family: 'Open Sans', sans-serif;
+  color: var(--ink);
+  font-family: var(--font-body);
   font-size: 0.9rem;
   font-weight: 500;
   transition: color 0.3s;
@@ -183,124 +158,98 @@ h2::after, h3::after, h4::after {
 
 .navbar a:hover,
 .navbar .nav-link:hover {
-  color: #00ADB5;
+  color: var(--teal);
+  text-decoration: none;
 }
 
 .navbar .nav-link.active,
 .navbar .nav-link.show {
-  color: #00ADB5 !important;
+  color: var(--teal) !important;
   font-weight: 600;
 }
 
-.contact-btn {
-  background-color: #00ADB5;
-  color: #FFFFFF;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-left: 0.5rem;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+/* Site title */
+.navbar-brand,
+.navbar-title,
+.navbar-brand:hover,
+.navbar-title:hover {
+  color: var(--teal) !important;
+}
+
+/* Contact us pill */
+.navbar-nav .nav-link[href*="contact"] {
+  background-color: var(--teal) !important;
+  color: var(--white) !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  border-radius: 20px !important;
+  margin-left: 1.5rem !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 
 /* ===========================
-   BUTTONS (Refined, Card-like)
+   BUTTONS
 =========================== */
 .btn-primary {
   background-color: transparent;
-  border: 1.5px solid #00ADB5;
-  color: #FFFFFF;
-  border-radius: 12px;            /* same as cards */
+  border: 1.5px solid var(--teal);
+  color: var(--white);
+  border-radius: var(--radius);
   padding: 0.6em 1.2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow like cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #00ADB5;
-  color: #FFFFFF;
-  transform: translateY(-3px);  /* lift like cards */
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.btn-primary:focus-visible {
+  background-color: var(--teal);
+  color: var(--white);
 }
 
 .btn-primary:active {
-  transform: translateY(0);      /* reset press */
-  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-}
-
-/* Optional: a secondary button for contrast */
-.btn-secondary {
-  background-color: #EEEEEE;
-  border: 1.5px solid #E0E0E0;
-  color: #393E46;
-  border-radius: 12px;
-  padding: 0.6em 1.2em;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #00ADB5;
-  color: #FFFFFF;
-  border-color: #00ADB5;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 
 /* ===========================
-   CARDS (Unified Style)
+   CARDS
 =========================== */
 .card,
-.contact-card,
-.project-card,
-.carousel .card {
-  background-color: #222831;
-  border: 1px solid #393E46;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+.project-card {
+  background-color: var(--dark);
+  border: 1px solid var(--dark-2);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   overflow: hidden;
 }
 
-.card:hover,
-.contact-card:hover,
-.project-card:hover,
-.carousel .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-  border: 1px solid #00ADB5;
+.project-card {
+  background-color: var(--dark-2);
+  border-color: var(--line);
 }
 
-.card img,
-.carousel .card img {
+.card img {
   display: block;
-  margin: 0 auto 0rem;
+  margin: 0 auto;
   border-radius: 50%;
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border: 2px solid #00ADB5;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 2px solid var(--teal);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .card-title {
-  color: #FFFFFF;
-  font-family: 'Kanit', sans-serif;
+  color: var(--white);
+  font-family: var(--font-head);
   font-weight: 600;
   font-size: 0.8rem;
   margin-top: 0.2rem;
@@ -309,67 +258,85 @@ h2::after, h3::after, h4::after {
 
 .card-text,
 .card p {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 0.5rem;
+  font-size: 0.875rem;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
-}
-
-/* Contact cards override */
-.contact-card {
-  background-color: #393E46;
-  color: #393E46;
-  border: 1px solid #E0E0E0;
-}
-
-.contact-card a {
-  color: #00ADB5;
-  font-weight: 500;
-}
-
-.contact-card a:hover {
-  color: #1A1A1A;
-}
-
-/* Project cards override */
-.project-card {
-  background-color: #393E46;
-  color: #393E46;
-  border: 1px solid #E0E0E0;
-}
-
-/* Carousel wrapper */
-.card-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem;
 }
 
 
 /* ===========================
    GRIDS
 =========================== */
-.contact-grid,
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-/* Supervisor grid - 2 columns on desktop, responsive on smaller screens */
+
+/* ===========================
+   SUPERVISORY TEAM (team page)
+=========================== */
 .supervisor-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;  /* Reduced gap for tighter fit */
-  margin-top: 2rem;
+  gap: 1rem;
+  margin: 2rem 0 0;
 }
 
-/* Team carousel cards - compact horizontal layout */
+/* Bootstrap .row/.col sizing would make each card half its grid cell */
+.supervisor-grid > .col {
+  width: auto;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+.supervisor-grid .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.supervisor-grid .card h3 {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  line-height: 1.2;
+}
+
+.supervisor-grid .card p {
+  font-size: 0.85rem;
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+  overflow-wrap: anywhere; /* long e-mail addresses on narrow screens */
+}
+
+.supervisor-grid .card .text-muted {
+  font-size: 0.8rem;
+}
+
+.supervisor-grid .card ul {
+  margin: 0.5rem 0 0;
+}
+
+/* Expertise and Mentorship lists in white */
+.supervisor-grid .card li,
+.supervisor-grid .card li strong {
+  color: var(--white);
+}
+
+.supervisor-grid .card li {
+  font-size: 0.8rem;
+  line-height: 1.35;
+  margin-bottom: 0.25rem;
+}
+
+
+/* ===========================
+   TEAM CAROUSEL (home page)
+=========================== */
 .team-carousel-card {
-  height: 80%;
   max-width: 150px;
   margin: 0 auto;
 }
@@ -382,121 +349,29 @@ h2::after, h3::after, h4::after {
 }
 
 .team-carousel-card .card-title {
-  font-family: 'Kanit', sans-serif !important;
-  font-size: 0.7rem !important;
-  font-weight: 500 !important;
-  margin-bottom: 0.2rem !important;
-  line-height: 1.1 !important;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.15;
 }
 
 .team-carousel-card .card-text {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 0.6rem !important;
-  line-height: 1.1 !important;
-  margin-bottom: 0.1rem !important;
-  color: #EEEEEE !important;
+  font-size: 0.65rem;
+  line-height: 1.2;
+  color: var(--light);
 }
 
 .team-carousel-card .card-body {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 0.75rem 0.75rem 1rem;
 }
 
-/* Force horizontal layout in carousel */
+/* Keep each slide's cards side by side */
 #teamCarousel .row {
-  display: flex !important;
-  flex-wrap: nowrap !important;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
-#teamCarousel .col-2 {
-  flex: 0 0 16.666667% !important;
-  max-width: 16.666667% !important;
-  padding: 0 0.25rem;
-}
-
-/* Add some spacing between carousel slides */
 #teamCarousel .carousel-item {
   padding: 3rem 1rem;
-}
-
-/* Responsive breakpoints for supervisor grid */
-@media (max-width: 992px) {
-  .supervisor-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .team-horizontal-grid {
-    justify-content: center;
-  }
-
-  .team-horizontal-grid .col-md-2 {
-    width: 130px;
-  }
-}
-
-@media (max-width: 576px) {
-  .supervisor-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .team-horizontal-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-horizontal-grid .col-md-2 {
-    width: 200px;
-  }
-}
-
-.row-cols-2 > .col,
-.row-cols-md-4 > .col {
-  margin-bottom: 2rem;
-}
-
-/* Ensure supervisor cards have consistent height */
-.supervisor-grid .card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Make supervisor card text smaller and more compact */
-.supervisor-grid .card-title {
-  font-family: 'Kanit', sans-serif !important;
-  font-size: 1rem !important;
-  font-weight: 500 !important;
-  margin-bottom: 0.3rem !important;
-  line-height: 1.1 !important;
-}
-
-.supervisor-grid .card p {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 0.8rem !important;
-  margin-bottom: 0.2rem !important;
-  line-height: 1.2 !important;
-}
-
-.supervisor-grid .card .text-muted {
-  font-size: 0.75rem !important;
-  line-height: 1.1 !important;
-}
-
-.supervisor-grid .card ul {
-  margin-bottom: 0.5rem !important;
-}
-
-.supervisor-grid .card ul li {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 0.75rem !important;
-  margin-bottom: 0.1rem !important;
-  line-height: 1.2 !important;
-}
-
-.supervisor-grid .card strong {
-  font-size: 0.75rem !important;
-  line-height: 1.1 !important;
 }
 
 
@@ -505,142 +380,149 @@ h2::after, h3::after, h4::after {
 =========================== */
 hr {
   border: none;
-  border-top: 1px dashed #00ADB5;
+  border-top: 1px dashed var(--teal);
   opacity: 0.6;
   margin: 2rem 0;
 }
 
-#supervisory-team-section {
-  background: #393E46;
-  padding: 3rem 2rem;
-}
-
 ul li strong {
-  color: #00ADB5;
+  color: var(--teal);
 }
 
-/* Ensure list items use Open Sans */
-ul li, ol li {
-  font-family: 'Open Sans', sans-serif;
-}
 
+/* ===========================
+   FOOTER
+=========================== */
 footer,
-#quarto-footer,
-.quarto-footer,
-.nav-footer {
-  background-color: #393E46 !important;
-  color: #FFFFFF !important;
-  border-top: 1px solid #E0E0E0 !important;
-}
-
-/* Footer text should use Open Sans */
-footer p,
-.nav-footer p,
-.quarto-footer p {
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* The white "box" is this container */
 .nav-footer,
 .nav-footer .container,
-.nav-footer .container-fluid,
-footer .content,
-.quarto-footer .content {
-  background-color: #393E46 !important;
+.nav-footer .container-fluid {
+  background-color: var(--dark-2) !important;
+  color: var(--white) !important;
   box-shadow: none !important;
-  border: none !important;
 }
 
-/* Optional: ensure no stray margins/padding create a light band */
-.quarto-footer,
 .nav-footer {
+  border-top: 1px solid var(--line) !important;
   margin: 0 !important;
-  padding-top: 1.25rem;  /* tweak as you like */
+  padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-/* Optional: match the "Back to top" button to your theme */
 .quarto-back-to-top {
-  background-color: #222831 !important;
-  color: #FFFFFF !important;
-  border: 1px solid #00ADB5 !important;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2) !important;
-  font-family: 'Open Sans', sans-serif;
+  background-color: var(--dark) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--teal) !important;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Make title always blue */
-.navbar-brand,
-.navbar-title {
-  color: #00ADB5 !important; /* Bootstrap blue */
+
+/* ===========================
+   HOVER EFFECTS
+   Only on devices with a real pointer, so cards and buttons
+   don't stay "lifted" after a tap on phones and tablets.
+=========================== */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover,
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--teal);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--teal);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-nav .nav-link[href*="contact"]:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 173, 181, 0.35);
+  }
 }
 
-.navbar-brand:hover,
-.navbar-title:hover {
-  color: #00ADB5 !important; /* Darker blue on hover */
+
+/* ===========================
+   TABLET & PHONE (navbar collapses below 992px)
+=========================== */
+@media (max-width: 991.98px) {
+  .navbar {
+    width: calc(100% - 2rem);
+    margin: 1rem auto;
+    border-radius: 24px; /* a full pill looks odd once the menu opens */
+  }
+
+  .navbar .navbar-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.6rem 0.25rem; /* larger tap targets */
+  }
+
+  .navbar-nav .nav-link[href*="contact"] {
+    display: inline-block;
+    margin: 0.5rem 0 0.75rem !important;
+  }
 }
 
-/* Make Contact nav item always blue */
-.navbar-nav .nav-link[href*="contact"],
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-item .nav-link:contains("Contact") {
-  color: #00ADB5 !important;
+@media (max-width: 767.98px) {
+  .supervisor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header,
+  .quarto-title-block,
+  .quarto-title-banner,
+  .title-block-banner {
+    padding: 1.25rem 1rem;
+  }
+
+  .card,
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  /* Three narrower cards per carousel slide */
+  #teamCarousel .carousel-item {
+    padding: 2rem 0.5rem;
+  }
+
+  #teamCarousel .col-3 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 0.25rem;
+  }
+
+  .team-carousel-card {
+    padding: 0.4rem;
+  }
+
+  .team-carousel-card .card-img-top {
+    height: 90px;
+  }
+
+  .team-carousel-card .card-body {
+    padding: 0.5rem 0.4rem 0.75rem;
+  }
 }
 
-.navbar-nav .nav-link[href*="contact"]:hover {
-  color: #00ADB5 !important;
-}
 
-/* Custom Contact Button Styling */
-.navbar-nav .nav-link[href*="contact"] {
-  background-color: #00ADB5 !important;
-  color: white !important;
-  font-weight: bold !important;
-  padding: 8px 16px !important;
-  border-radius: 20px !important;
-  margin-left: 8px !important;
-  transition: all 0.3s ease !important;
-}
+/* ===========================
+   ACCESSIBILITY
+=========================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-.navbar-nav .nav-link[href*="contact"]:hover {
-  background-color: #00ADB5 !important;
-  color: white !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3) !important;
-}
-
-/* Alternative approach if you can add a custom class */
-.contact-btn {
-  background-color: #00ADB5 !important;
-  color: white !important;
-  font-weight: bold !important;
-  padding: 8px 16px !important;
-  border-radius: 20px !important;
-  margin-left: 8px !important;
-  text-decoration: none !important;
-  transition: all 0.3s ease !important;
-  display: inline-block !important;
-}
-
-.contact-btn:hover {
-  background-color: #00ADB5 !important;
-  color: white !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3) !important;
-  text-decoration: none !important;
-}
-
-/* Option 2: More specific blue color */
-:root {
-  --brand-blue: #00ADB5; /* Tailwind blue-600 */
-  --brand-blue-hover: #00ADB5; /* Tailwind blue-700 */
-}
-
-/* Using custom properties */
-.navbar-nav .nav-link[href*="contact"].btn-style {
-  background-color: var(--brand-blue) !important;
-  color: white !important;
-  font-weight: bold !important;
-  padding: 8px 16px !important;
-  border-radius: 6px !important;
-  margin-left: 8px !important;
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
 }
