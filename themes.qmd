@@ -1,10 +1,8 @@
 ---
 title: "Themes and Topics"
-title-block: none
-format: html
 ---
 
-## Type of Master Thesis (expected output):
+## Type of Master Thesis (expected output)
 
 -   **Strategic Spatial Frameworks** – comprehensive plans guiding urban or regional development strategies.
 

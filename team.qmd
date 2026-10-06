@@ -1,9 +1,6 @@
 ---
-title: "Team"
-title-block: none
+title: "The Supervisory Team"
 ---
-
-## The Supervisory Team
 
 We are 8 supervisors from across the Department of Urbanism, bringing together expertise in design, data, planning, and climate adaptation.
 
@@ -11,11 +8,11 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 1 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/danielecannatella.jpg" alt="Daniele Cannatella" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/danielecannatella.jpg" alt="Daniele Cannatella" width="96" height="96"/>
 
 ### Daniele Cannatella
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Urban Data Science</p>
 <p><strong>Email:</strong> <a href="mailto:d.cannatella@tudelft.nl">d.cannatella@tudelft.nl</a></p>
 
@@ -28,15 +25,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 2 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Claudiu Forgaci" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/Portrait_Placeholder.png" alt="Claudiu Forgaci" width="96" height="96"/>
 
 ### Claudiu Forgaci
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Urban Design</p>
 <p><strong>Email:</strong> <a href="mailto:c.forgaci@tudelft.nl">c.forgaci@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Data-informed design, urban data science, spatial analysis, urban resilience, green-blue infrastructure, R programming</li>
 <li><strong>Mentorship:</strong> 1st mentor: 3 students; 2nd mentor: 2 students</li>
 </ul>
@@ -45,15 +42,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 3 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/clementinecottineau.webp" alt="Clémentine Cottineau-Mugadza" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/clementinecottineau.webp" alt="Clémentine Cottineau-Mugadza" width="96" height="96"/>
 
 ### Clémentine Cottineau-Mugadza
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Urban Studies</p>
 <p><strong>Email:</strong> <a href="mailto:c.cottineau@tudelft.nl">c.cottineau@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Quantitative geography, socioeconomic inequalities, spatial segregation, residential choice and mobility, interactive data visualization</li>
 <li><strong>Mentorship:</strong> 1st mentor: 1 student; 2nd mentor: 1 student</li>
 </ul>
@@ -62,15 +59,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 4 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Juliana Gonçalves" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/Portrait_Placeholder.png" alt="Juliana Gonçalves" width="96" height="96"/>
 
 ### Juliana Gonçalves
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Urban Design</p>
 <p><strong>Email:</strong> <a href="mailto:j.goncalves@tudelft.nl">j.goncalves@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Citizen participation, digital participation, climate adaptation</li>
 <li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
 </ul>
@@ -79,15 +76,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 5 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Birgit Hausleitner" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/Portrait_Placeholder.png" alt="Birgit Hausleitner" width="96" height="96"/>
 
 ### Birgit Hausleitner
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Urban Design</p>
 <p><strong>Email:</strong> <a href="mailto:b.hausleitner@tudelft.nl">b.hausleitner@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Space syntax, pattern language, typology construction, metropolitan transformation, urban economy</li>
 <li><strong>Mentorship:</strong> 1st mentor: 1 student; 2nd mentor: 2 students</li>
 </ul>
@@ -96,15 +93,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 6 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/danielamaiullari.webp" alt="Daniela Maiullari" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/danielamaiullari.webp" alt="Daniela Maiullari" width="96" height="96"/>
 
 ### Daniela Maiullari
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Environmental Technology & Design</p>
 <p><strong>Email:</strong> <a href="mailto:d.maiullari@tudelft.nl">d.maiullari@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Environmental modeling, microclimate analysis</li>
 <li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
 </ul>
@@ -113,15 +110,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 7 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/Portrait_Placeholder.png" alt="Ignacio Urria Yáñez" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/Portrait_Placeholder.png" alt="Ignacio Urria Yáñez" width="96" height="96"/>
 
 ### Ignacio Urria Yáñez
-<p class="text-muted mb-1">PhD Researcher</p>
+<p class="text-muted">PhD Researcher</p>
 <p><strong>Section:</strong> Urban Data Science</p>
 <p><strong>Email:</strong> <a href="mailto:I.A.UrriaYanez@tudelft.nl">I.A.UrriaYanez@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Socio-Spatial Inequality, Multi-Scale Urban Analysis, Geographic Data Science, Urban Change, Neighbourhood Effects</li>
 </ul>
 :::
@@ -129,15 +126,15 @@ We are 8 supervisors from across the Department of Urbanism, bringing together e
 
 <!-- 8 -->
 :::: {.col}
-::: {.card .h-100 .p-3 .text-center}
-<img src="images/marjoleinvanesch.webp" alt="Marjolein van Esch" class="rounded-circle mb-3 mx-auto d-block" width="150" height="150"/>
+::: card
+<img src="images/marjoleinvanesch.webp" alt="Marjolein van Esch" width="96" height="96"/>
 
 ### Marjolein van Esch
-<p class="text-muted mb-1">Assistant Professor</p>
+<p class="text-muted">Assistant Professor</p>
 <p><strong>Section:</strong> Environmental Technology & Design</p>
 <p><strong>Email:</strong> <a href="mailto:m.vanesch@tudelft.nl">m.vanesch@tudelft.nl</a></p>
 
-<ul class="list-unstyled text-start small mx-auto" style="max-width: 300px;">
+<ul>
 <li><strong>Expertise:</strong> Environmental modeling, microclimate analysis, climate adaptation</li>
 <li><strong>Mentorship:</strong> 2nd mentor: 1 student</li>
 </ul>

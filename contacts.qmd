@@ -1,9 +1,5 @@
 ---
 title: "Contact us"
-title-block: none
-format:
-  html:
-    theme: default
 ---
 
 Have questions about our research or interested in collaboration? We'd love to hear from you.

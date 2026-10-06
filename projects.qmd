@@ -1,12 +1,6 @@
 ---
 title: "Graduation Project Highlights"
-title-block: false
-format:
-  html:
-    theme: default
 ---
-
-# Graduation Project Highlights
 
 Curious what graduation work looks like in this cluster?\
 Here are some examples from previous students. Each project shows a different way of combining spatial data, analysis, and design to respond to real urban challenges. Use these projects as inspiration when developing your own ideas.

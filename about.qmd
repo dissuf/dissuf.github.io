@@ -1,12 +1,7 @@
 ---
-title: "About"
-title-block-banner: false
-format:
-  html:
-    title-block-banner: false
+title: "About the cluster"
+subtitle: "Data-Informed Strategies for Sustainable Urban Futures"
 ---
-
-## Data-Informed Design for Sustainable Urban Futures
 
 This cluster explores how data-informed approaches can support the design of climate-resilient urban environments. As cities increasingly face pressures such as flooding, heat stress, and resource scarcity, urbanism should harness the growing availability of urban data, analytics, and digital tools to evolve toward integrated, evidence-based, and context-sensitive design practices. **The cluster investigates how spatial data, modeling, and analysis can support innovative strategies operating across scales – from neighbourhoods to regions - and respond to specific urban challenges**.
 

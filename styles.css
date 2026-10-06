@@ -1,0 +1,695 @@
+/* =========================================================
+   DISSUF · Direction A: "Contour"
+   A survey-map look: paper background, ink lines, one
+   vermilion survey point. Contour lines are the only
+   decoration, and they live in the hero and the dividers.
+
+   Fonts are loaded in _quarto.yml (see the <link> there):
+   Space Grotesk  -> headings
+   IBM Plex Sans  -> body text
+   IBM Plex Mono  -> small "map labels" (subtitle, coordinates)
+========================================================= */
+
+:root {
+  /* Colours */
+  --paper:      #F4F1EA;  /* page background, like map paper   */
+  --paper-2:    #EAE5D9;  /* slightly darker paper for bands   */
+  --paper-card: #FBF9F4;  /* card surface                      */
+  --ink:        #1B2A3A;  /* main text and lines               */
+  --ink-2:      #4A5868;  /* secondary text                    */
+  --line:       #D6CFBF;  /* hairlines and borders             */
+  --accent:     #E4572E;  /* vermilion: survey point, big type */
+  --accent-ink: #B23F1A;  /* darker vermilion: readable links  */
+
+  /* Type */
+  --font-head: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Shape */
+  --radius: 6px;          /* small radius, like a map legend box */
+  --measure: 68ch;        /* comfortable reading line length     */
+}
+
+
+/* =========================================================
+   BASE
+========================================================= */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  background-color: var(--paper);
+  color: var(--ink);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: var(--ink);
+}
+
+main p,
+main li {
+  max-width: var(--measure);
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.text-muted {
+  color: var(--ink-2) !important;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-head);
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+h1 { font-size: clamp(1.9rem, 1.4rem + 2vw, 2.6rem); }
+
+h2 {
+  font-size: clamp(1.45rem, 1.2rem + 1vw, 1.85rem);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3 { font-size: 1.25rem; margin-top: 2rem; }
+h4 { font-size: 1.05rem; }
+
+/* Quarto adds a line under h2 by default; the contour divider replaces it */
+h2, .h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+/* =========================================================
+   HERO / TITLE BLOCK
+   The one bold element: big title on paper, with contour
+   lines rising on the right and a vermilion survey point.
+========================================================= */
+.quarto-title-banner,
+.title-block-banner,
+#title-block-header.quarto-title-block {
+  position: relative;
+  background-color: var(--paper) !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420' preserveAspectRatio='xMaxYMid slice'%3E%3Cg transform='translate(430 210) rotate(0) scale(0.28)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.32' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(436 207) rotate(9) scale(0.55)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.16' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(442 204) rotate(18) scale(0.82)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.16' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(448 201) rotate(27) scale(1.09)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.16' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(454 198) rotate(36) scale(1.36)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.32' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(460 195) rotate(45) scale(1.63)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.16' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(466 192) rotate(54) scale(1.90)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.16' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(472 189) rotate(63) scale(2.17)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.16' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Cg transform='translate(478 186) rotate(72) scale(2.44)'%3E%3Cpath d='M0,-100 C55,-102 112,-62 106,-4 C101,52 58,97 4,99 C-58,102 -108,58 -101,-2 C-95,-57 -54,-98 0,-100Z' fill='none' stroke='%231B2A3A' stroke-opacity='0.32' stroke-width='1.1' vector-effect='non-scaling-stroke'/%3E%3C/g%3E%3Ccircle cx='432' cy='208' r='4' fill='%23E4572E'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: auto 100% !important;
+  color: var(--ink) !important;
+  border: none !important;
+  text-align: left;
+}
+
+.quarto-title-banner {
+  padding: clamp(3rem, 2rem + 5vw, 6.5rem) 0 clamp(2.5rem, 2rem + 3vw, 4.5rem) !important;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+/* Coordinates of the Faculty of Architecture, as a map label */
+.quarto-title-banner::after {
+  content: "52.006° N  4.370° E";
+  position: absolute;
+  right: clamp(1rem, 4vw, 3rem);
+  bottom: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
+}
+
+.quarto-title-block .quarto-title h1.title,
+.quarto-title-banner h1,
+.page-header h1 {
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: clamp(2.1rem, 1.3rem + 3.4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--ink) !important;
+  max-width: 17ch;
+  margin: 0;
+}
+
+.quarto-title-block .subtitle,
+.subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--accent-ink) !important;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* Pages with a plain (non-banner) title: no contours, smaller title.
+   The #id is needed to outrank the hero rule above. */
+#title-block-header.quarto-title-block:not(:has(.quarto-title-banner)) {
+  background-image: none !important;
+  padding: clamp(1.5rem, 1rem + 2vw, 2.5rem) 0 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+#title-block-header.quarto-title-block:not(:has(.quarto-title-banner)) h1.title {
+  font-size: clamp(1.9rem, 1.4rem + 2vw, 2.6rem);
+  max-width: none;
+}
+
+#title-block-header.quarto-title-block:not(:has(.quarto-title-banner)) .subtitle {
+  margin-top: 0.75rem;
+}
+
+
+/* =========================================================
+   INTRO PARAGRAPH  (::: intro in index.qmd)
+========================================================= */
+.intro {
+  font-family: var(--font-head);
+  font-size: clamp(1.3rem, 1.1rem + 0.8vw, 1.65rem);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  max-width: 30ch;
+  margin: 1rem 0 2.5rem;
+}
+
+.intro p {
+  color: inherit;
+  max-width: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+   Flat bar on paper with a hairline underneath.
+========================================================= */
+.navbar,
+#quarto-header .navbar {
+  background-color: var(--paper) !important;
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.navbar-brand,
+.navbar-title,
+.navbar-brand:hover,
+.navbar-title:hover {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+  color: var(--ink) !important;
+  text-decoration: none;
+}
+
+.navbar .nav-link,
+.navbar a {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink-2) !important;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+  color: var(--ink) !important;
+}
+
+/* Active page: a short vermilion underline, like a highlighted route */
+.navbar .nav-link.active {
+  color: var(--ink) !important;
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+/* "Contact us" as a small outlined button */
+.navbar-nav .nav-link[href*="contact"] {
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  padding: 0.35rem 0.9rem !important;
+  margin-left: 0.75rem;
+  color: var(--ink) !important;
+  box-shadow: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Mobile menu icon and search icon in ink (defaults are white) */
+.navbar-toggler {
+  border-color: var(--line);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%231B2A3A' stroke-linecap='round' stroke-width='2' d='M4 8h22M4 15h22M4 22h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar .aa-DetachedSearchButton .aa-DetachedSearchButtonIcon,
+.navbar #quarto-search .aa-SubmitIcon {
+  color: var(--ink) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   Works for real buttons and for the "::: btn-primary"
+   div used in index.qmd.
+========================================================= */
+.btn-primary,
+div.btn-primary {
+  display: inline-block;
+  background-color: var(--ink);
+  border: 1px solid var(--ink);
+  color: var(--paper);
+  border-radius: var(--radius);
+  padding: 0.6em 1.3em;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+div.btn-primary p {
+  margin: 0;
+  color: inherit;
+}
+
+div.btn-primary a {
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   SECTIONS  (::: section-gray / ::: content-wrapper)
+========================================================= */
+.section-gray {
+  background-color: var(--paper-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 3rem 0;
+  padding: 0.5rem 0 2.5rem;
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section-gray h2 {
+  margin-top: 2rem;
+}
+
+
+/* =========================================================
+   CARDS
+   Quiet legend-box cards: no shadow, hairline border.
+========================================================= */
+.card,
+.project-card {
+  background-color: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: none;
+  padding: 1.5rem;
+  color: var(--ink);
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+  filter: grayscale(15%);
+}
+
+.card-title {
+  font-family: var(--font-head);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ink);
+  margin: 0.4rem 0 0.15rem;
+}
+
+.card-text,
+.card p {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  margin: 0.15rem 0;
+}
+
+
+/* =========================================================
+   GRIDS
+========================================================= */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+
+/* =========================================================
+   SUPERVISORY TEAM (team page)
+========================================================= */
+.supervisor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0 0;
+}
+
+.supervisor-grid > .col {
+  width: auto;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+.supervisor-grid .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.supervisor-grid .card img {
+  margin: 0 0 1rem;
+}
+
+.supervisor-grid .card h3 {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+  margin-top: 0;
+}
+
+.supervisor-grid .card p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;  /* long e-mail addresses */
+}
+
+.supervisor-grid .card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.supervisor-grid .card li {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+  color: var(--ink);
+}
+
+
+/* =========================================================
+   TEAM CAROUSEL (home page)
+========================================================= */
+.team-carousel-card {
+  max-width: 160px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.team-carousel-card .card-img-top {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: var(--radius) var(--radius) 0 0;
+  border: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.team-carousel-card .card-body {
+  padding: 0.75rem 0.75rem 1rem;
+}
+
+.team-carousel-card .card-title {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.team-carousel-card .card-text {
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
+#teamCarousel .row {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#teamCarousel .carousel-item {
+  padding: 2rem 3rem 3rem;
+}
+
+/* The prev/next buttons in index.qmd are empty, so draw arrows here
+   using the Bootstrap Icons font that Quarto already loads */
+#teamCarousel .carousel-control-prev,
+#teamCarousel .carousel-control-next {
+  width: 2.5rem;
+  opacity: 1;
+  color: var(--ink);
+}
+
+#teamCarousel .carousel-control-prev::before,
+#teamCarousel .carousel-control-next::before {
+  font-family: "bootstrap-icons";
+  font-size: 1.4rem;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+#teamCarousel .carousel-control-prev::before { content: "\F284"; }
+#teamCarousel .carousel-control-next::before { content: "\F285"; }
+
+#teamCarousel .carousel-indicators {
+  margin-bottom: 0.5rem;
+}
+
+#teamCarousel .carousel-indicators [data-bs-target] {
+  width: 22px;
+  height: 3px;
+  background-color: var(--ink);
+  opacity: 0.25;
+  border: none;
+}
+
+#teamCarousel .carousel-indicators .active {
+  background-color: var(--accent);
+  opacity: 1;
+}
+
+
+/* =========================================================
+   LISTS, DIVIDERS
+========================================================= */
+ul li::marker {
+  color: var(--accent);
+}
+
+ul li strong {
+  color: var(--ink);
+}
+
+/* Horizontal rules become a single contour line */
+hr {
+  border: none;
+  height: 12px;
+  margin: 2.5rem 0;
+  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='12' viewBox='0 0 120 12'%3E%3Cpath d='M0 6 C20 0 40 0 60 6 S100 12 120 6' fill='none' stroke='%231B2A3A' stroke-opacity='0.35' stroke-width='1'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer,
+.nav-footer,
+.nav-footer .container,
+.nav-footer .container-fluid {
+  background-color: var(--paper-2) !important;
+  color: var(--ink-2) !important;
+  box-shadow: none !important;
+}
+
+.nav-footer {
+  border-top: 1px solid var(--line) !important;
+  margin: 0 !important;
+  padding: 1.25rem 0;
+  font-size: 0.85rem;
+}
+
+.nav-footer a,
+.nav-footer .nav-link {
+  color: var(--ink) !important;
+}
+
+.quarto-back-to-top {
+  background-color: var(--paper) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--ink) !important;
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   HOVER (only on devices with a real mouse)
+========================================================= */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover,
+  .project-card:hover {
+    border-color: var(--ink);
+  }
+
+  .btn-primary:hover,
+  div.btn-primary:hover {
+    background-color: var(--accent-ink);
+    border-color: var(--accent-ink);
+  }
+
+  .navbar-nav .nav-link[href*="contact"]:hover {
+    background-color: var(--ink);
+    color: var(--paper) !important;
+  }
+}
+
+
+/* =========================================================
+   TABLET & PHONE
+========================================================= */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    padding: 0.6rem 0.25rem;   /* bigger tap targets */
+  }
+
+  .navbar-nav .nav-link[href*="contact"] {
+    display: inline-block;
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  .navbar .nav-link.active {
+    box-shadow: inset 2px 0 0 var(--accent);
+    padding-left: 0.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Contours fade back so the title stays readable on small screens */
+  .quarto-title-banner {
+    background-size: auto 85% !important;
+    background-position: 140% center !important;
+  }
+
+  .quarto-title-banner::after {
+    position: static;
+    display: block;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .supervisor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .project-card {
+    padding: 1.25rem;
+  }
+
+  #teamCarousel .carousel-item {
+    padding: 1.5rem 2.25rem 2.75rem;
+  }
+
+  #teamCarousel .col-3 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 0.25rem;
+  }
+
+  .team-carousel-card .card-img-top {
+    height: 90px;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
